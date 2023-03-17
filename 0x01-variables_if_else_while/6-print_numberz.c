@@ -5,8 +5,8 @@
  */
 int main(void)
 {	int i;
-	char t[10]="0123456789";
 	for (i = 0 ; i < 10 ; i++)
-	putchar(t[i]);
+	putchar('0' + i);
+	putchar('\n');
 	return (0);
 }
