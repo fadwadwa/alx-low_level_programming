@@ -5,9 +5,9 @@
  */
 int main(void)
 {	int i;
-	char t[100] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\0\n";
+	char t[100] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 
-	for (i = 0; i < 54 ; i++)
+	for (i = 0; i < 53 ; i++)
 	putchar(t[i]);
 	return (0);
 }
