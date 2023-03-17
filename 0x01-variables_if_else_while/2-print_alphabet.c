@@ -5,8 +5,9 @@
  */
 int main(void)
 {	int i;
-	char t[] = "abcdefghijklmnopqrstuvwxyz";
-	for (i = 0; i < 26 ; i++)
+	char t[] = "abcdefghijklmnopqrstuvwxyz\n";
+
+	for (i = 0; i < 27 ; ++i)
 		putchar(t[i]);
 	return (0);
 }
