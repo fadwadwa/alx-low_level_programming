@@ -13,32 +13,18 @@ void times_table(void)
 		{
 			_putchar(',');
 			r = i * j;
-			if (r > 9)
+			_putchar(' ');
+			if (r <= 9)
 			{
-				if (j == 9)
-				{
-					_putchar((r / 10) + '0');
-					_putchar((r % 10) + '0');
-				}
-				else
-				{
-					_putchar((r / 10) + '0');
-					_putchar((r % 10) + '0');
-					_putchar(' ');
-				}
+				_putchar(' ');
+				_putchar(r + '0');
 			}
 			else
 			{
-				if (j == 9)
-					_putchar(r + '0');
-				else
-				{
-					_putchar(r + '0');
-					_putchar(' ');
-					_putchar(' ');
-				}
+				_putchar(r + '0');
 			}
 		}
 		_putchar('\n');
 	}
+	return (0);
 }
