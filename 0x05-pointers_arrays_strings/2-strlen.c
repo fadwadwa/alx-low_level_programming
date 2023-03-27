@@ -14,5 +14,5 @@ int _strlen(char *s)
 		leng++;
 		i++;
 	}
-	printf("%d", leng);
+	_putchar(leng + '0');
 }
