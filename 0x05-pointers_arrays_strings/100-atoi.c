@@ -10,22 +10,21 @@ int _atoi(char *s)
 {
 	int sign = 1;
 	int num = 0;
-	int started = 0;
 
-	while (*s != '\0')
+	while (*s == ' ' || *s == '\t' || *s == '\n' || *s == '\r')
+		s++;
+	if (*s == '-')
 	{
-		if (*s == '-')
-			sign = -1;
-		else if (*s == '+')
-			sign = 1;
-		else if (*s >= '0' && *s <= '9')
-		{
-			started = 1;
-			num = num * 10 + (*s - '0');
-		}
-		else if (started)
-			break;
+		sign = -1;
 		s++;
 	}
+	else if (*s == '+')
+		s++;
+	while (*s >= '0' && *s <= '9')
+	{
+		num = num * 10 + (*s - '0');
+		s++;
+	}
+
 	return (sign * num);
 }
