@@ -8,6 +8,7 @@
  */
 char *leet(char *str)
 {
+	char *p = str;
 	int i, j;
 	char *l = "433710";
 	char *n = "aAeEoOtTlL";
@@ -17,8 +18,8 @@ char *leet(char *str)
 		for (j = 0, str[j] != '\0'; j++)
 		{
 			if (str[j] == n[i])
-				str[j] = l[i / 2];
+				p[j] = l[i / 2];
 		}
 	}
-	return (str);
+	return (p);
 }
