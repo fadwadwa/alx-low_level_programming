@@ -13,7 +13,7 @@ char *leet(char *str)
 	char *l = "433710";
 	char *n = "aAeEoOtTlL";
 
-	for (i = 0; n[i] != 0; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
 		for (j = 0, str[j] != '\0'; j++)
 		{
