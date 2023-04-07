@@ -16,10 +16,10 @@ int _sqrt_recursion(int n)
 }
 
 /**
- *
- *
- *
- *
+ * __sqrt - recurses
+ * @n: an int
+ * @i: iterator
+ * Return: the result
  */
 int __sqrt(int n, int i)
 {
