@@ -1,5 +1,7 @@
 #include "main.h"
+
 int _prime_test(int n, int i);
+
 /**
  * is_prime_number - checks a number if it is a mrime num or no
  * @n: the number to be checked
@@ -12,6 +14,7 @@ int is_prime_number(int n)
 	else
 		return (_prime_test(n, 2));
 }
+
 /**
  * _prime_test - tests if the number is prime
  * @n: the number to be tested
@@ -28,5 +31,5 @@ int _prime_test(int n, int i)
 			return (0);
 	}
 	else /* n % i != 0 */
-		_prime_test(n, i + 1);
+		return (_prime_test(n, i + 1));
 }
