@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main -main fct
+ * main - main fct
  * @argc: arg counter
  * @argv: arg vector
+ *
  * Return: 0
  */
+
 int main(int argc, char **argv)
 {
 	int cents, coins =0;
