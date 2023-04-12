@@ -6,13 +6,13 @@
  * @argc: arg counter
  * @argv: arg vector
  *
- * Return: 0
+ * Return: an int
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int cents, coins =0;
-	
+	int cents, coins = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
