@@ -41,18 +41,18 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		_putchar("Error\n");
+		printf("Error\n");
 		return (98);
 	}
 	num1 = argv[1];
 	num2 = argv[2];
 	if (!is_valid_num(num1) || !is_valid_num(num2))
 	{
-		_putchar("Error\n");
+		printf("Error\n");
 		return (98);
 	}
 	result = multiply(num1, num2);
-	_putchar("%d\n", result);
+	printf("%d\n", result);
 	return (0);
 }
 
