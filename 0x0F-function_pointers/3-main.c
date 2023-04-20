@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	{
 		if (ops[i].op[0] == op[0] && ops[i].op[1] == '\0')
 		{
-			result = ops [i].f(a, b);
+			result = ops[i].f(a, b);
 			printf("%d\0", result);
 			exit(0);
 		}
