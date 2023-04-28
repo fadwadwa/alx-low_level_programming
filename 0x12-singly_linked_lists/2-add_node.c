@@ -12,7 +12,7 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *new = malloc(sizeof(list_t));/*allocate memo for new node*/
 	int i;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL)
 		return (NULL);
 	if (new == NULL)/*failed allocation*/
 		return (NULL);
