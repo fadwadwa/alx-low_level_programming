@@ -10,14 +10,15 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new = malloc(sizeof(list_t));/*allocate memo for new node*/
-	char *str_copy = strdup(str);/* duplicate the string*/
 	int i;
 
+	if (str == NULL || *str == '\0')
+		return (NULL);
 	if (new == NULL)/*failed allocation*/
 		return (NULL);
-	for (i = 0; str_copy[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 		;
-	new->str = str_copy;/*assign the dup string to the new node*/
+	new->str = strdup(str);/*assign the dup string to the new node*/
 	new->len = i;
 	new->next = *head;/* make the new node the head */
 	*head = new;/*update the head*/
