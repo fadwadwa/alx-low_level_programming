@@ -11,11 +11,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *prev, *tmp;
 	unsigned int count = 1;
 
-	if (head == NULL)
+	if (head == NULL || *head == NULL)
 		return (-1);
 	if (index == 0)
 	{
-		free(head);
+		tmp = *head;
+		*head = (*head)->next;
+		free(tmp);
 		return (1);
 	}
 	prev = *head;
